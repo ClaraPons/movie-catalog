@@ -1,0 +1,11 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(100px);
+    background-color:rgba(255,255,255, .03);
+    border-radius: 15px;
+    margin: 10px 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}

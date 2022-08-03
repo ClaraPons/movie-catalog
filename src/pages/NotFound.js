@@ -1,7 +1,11 @@
+import './NotFound.css'
 
 const NotFound = () => {
+
   return (
-    <h1>Error 404</h1>
+    <div className="error">
+    <h1 >Error 404 : Page not Found</h1>
+    </div>
   );
 }
 
