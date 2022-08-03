@@ -1,10 +1,24 @@
+@font-face {
+    font-family: patuaone;
+    src: url("../../public/Patua_One/PatuaOne-Regular.ttf");
+  }
+  
+body{
+    background-image: url("https://media.giphy.com/media/3ohzdQUe71SON8Ao7K/giphy.gif");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    font-family: "patuaone",Arial, Helvetica, sans-serif;
+}
+
 .title-movies{
     text-align: center;
     font-size: 40px;
+    color: white;
 }
 
-.affiche{
-    width: 250px;
+.affiche-all{
+    width: 140px;
 }
 
 .list-movies{
@@ -13,16 +27,29 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 90px;
 }
 
 .box{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(100px);
+    background-color:rgba(255,255,255, .03);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.box:hover{
+    background-color:rgba(255,255,255, .6);
+}
+
+.link-text{
+    color: rgba(255,255,255);
+    font-size: 13px;
+    text-align: center;
 }
 
 .link{
-    color: white;
     text-decoration: none;
-    background-color: black;
 }

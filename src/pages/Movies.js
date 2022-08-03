@@ -7,14 +7,14 @@ const Movies = () => {
 
   return (
     <>
-    <h1 className='title-movies'>Movies</h1>
+    <h1 className='title-movies'>Movies list</h1>
     <ul className='list-movies'>
     {Catalog.map(Catalog => (
-        <Link to={`/movie/${Catalog.id}`}>
+        <Link className="link" to={`/movie/${Catalog.id}`}>
             <div className='box'>
-                <img className='affiche' src={Catalog.image}></img>
+                <img className='affiche-all' src={Catalog.image} alt='affiche'></img>
                 <li key={Catalog.title}>
-                    <p>{Catalog.title}</p>
+                    <p className='link-text'>{Catalog.title}</p>
                 </li>
             </div>
         </Link>
