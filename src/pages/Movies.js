@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Catalog from '../Catalog.json'
+import Movie from './Movie.js';
 import './Movies.css'
 
 
@@ -9,12 +10,12 @@ const Movies = () => {
     <>
     <h1 className='title-movies'>Movies list</h1>
     <ul className='list-movies'>
-    {Catalog.map(Catalog => (
-        <Link className="link" to={`/movie/${Catalog.id}`}>
+    {Catalog.map(movie => (
+        <Link className="link" to={`/movie/${movie.id}`}>
             <div className='box'>
-                <img className='affiche-all' src={Catalog.image} alt='affiche'></img>
-                <li key={Catalog.title}>
-                    <p className='link-text'>{Catalog.title}</p>
+                <img className='affiche-all' src={movie.image} alt='affiche'></img>
+                <li key={movie.title}>
+                    <p className='link-text'>{movie.title}</p>
                 </li>
             </div>
         </Link>
