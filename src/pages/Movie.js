@@ -8,10 +8,10 @@ import './Movie.css'
 const Movie = () => {
   
   const params = useParams()
-  const { id } = params
+  // const { id } = params
 
   const currentMovie = Catalog.find((movie) =>{
-      return movie.id === Number(id)
+      return movie.id === Number(params.id)
   })
 
   const [movie] = useState(currentMovie)
