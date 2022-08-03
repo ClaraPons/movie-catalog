@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import Catalog from '../Catalog.json'
 import Movie from './Movie.js';
-import './Movies.css'
+import './Home.css'
 
 
-const Movies = () => {
+const Home = () => {
 
   return (
     <>
@@ -25,4 +25,4 @@ const Movies = () => {
   );
 }
 
-export default Movies;
+export default Home;
